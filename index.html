@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Slips Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-pic">[Profile Picture]</div>
+            <nav>
+                <ul>
+                    <li>Dashboard</li>
+                    <li>My Pay Slips</li>
+                    <li>Attendance</li>
+                    <li>Tax Deductions</li>
+                    <li>Reimbursements</li>
+                    <li>Documents</li>
+                    <li>Help</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header>
+                <h1>Pay Slips</h1>
+                <button>Download Payslips</button>
+            </header>
+
+            <section class="payslip-section">
+                <label for="year-select">Select financial year:</label>
+                <select id="year-select">
+                    <option>2024 - 2025</option>
+                    <!-- Add more years if needed -->
+                </select>
+
+                <table class="payslip-table">
+                    <thead>
+                        <tr>
+                            <th>Month</th>
+                            <th>Title</th>
+                            <th>Gross Salary</th>
+                            <th>In-hand Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Oct, 2024</td>
+                            <td>Front End Developer</td>
+                            <td>₹10,000</td>
+                            <td>₹10,000</td>
+                        </tr>
+                        <tr>
+                            <td>Sep, 2024</td>
+                            <td>Front End Developer</td>
+                            <td>₹2,667</td>
+                            <td>₹2,667</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button>Return to dashboard</button>
+            </section>
+
+            <section class="chart-section">
+                <canvas id="salaryChart" width="600" height="300"></canvas>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
